@@ -1,0 +1,8 @@
+{
+  "name": "saveus-website-builder",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "puppeteer": "^25.8.0"
+  }
+}
