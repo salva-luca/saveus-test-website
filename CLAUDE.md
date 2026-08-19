@@ -46,6 +46,13 @@
 - **Spacing:** Use intentional, consistent spacing tokens — not random Tailwind steps.
 - **Depth:** Surfaces should have a layering system (base → elevated → floating), not all sit at the same z-plane.
 
+## Git & Deploy Workflow
+- Repo: [github.com/salva-luca/saveus-test-website](https://github.com/salva-luca/saveus-test-website), connected to Netlify — Netlify auto-publishes the `main` branch to the live domain.
+- `main` = production. Never commit or push directly to `main`.
+- Do all work on the `staging` branch. Push it and open a PR `staging → main` via `gh pr create` when a change is ready to review.
+- Netlify auto-comments a deploy-preview URL on the PR — use that (plus in-chat screenshots) to check changes before they go live.
+- **Never merge the PR to `main` unless the user explicitly says so in that conversation** (e.g. "dale", "mergealo"). This holds every time, not just once — treat each merge to `main` as a fresh outward-facing action needing its own go-ahead, even if a previous change was approved the same way.
+
 ## Hard Rules
 - Do not add sections, features, or content not in the reference
 - Do not "improve" a reference design — match it
